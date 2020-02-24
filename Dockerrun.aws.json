@@ -4,7 +4,11 @@
     {
       "name": "client",
       "image": "alexyoungz/multi-client",
-      "hostname": "client"
+      "hostname": "client",
+      "essential": false
+    },
+    {
+      "name"
     }
   ]
 }
