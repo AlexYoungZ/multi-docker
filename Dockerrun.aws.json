@@ -8,7 +8,16 @@
       "essential": false
     },
     {
-      "name"
+      "name": "server",
+      "image": "alexyoungz/multi-server",
+      "hostname": "api",
+      "essential": false
+    },
+    {
+      "name": "worker",
+      "image": "alexyoungz/multi-worker",
+      "hostname": "worker",
+      "essential": false
     }
   ]
 }
