@@ -18,6 +18,22 @@
       "image": "alexyoungz/multi-worker",
       "hostname": "worker",
       "essential": false
+    },
+    {
+      "name": "nginx",
+      "image": "alexyoungz/multi-nginx",
+      "hostname": "nginx",
+      "essential": true,
+      "pportMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 80
+        }
+      ],
+      "links": [
+        "client",
+        "server"
+      ]
     }
   ]
 }
